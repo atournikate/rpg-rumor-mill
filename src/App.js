@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Button from './Components/Button';
+import Rumor from './Components/Rumor';
+import Footer from './Components/Footer';
 
-function App() {
+
+const App = () => {
+
+
+ const onClickHandler = () => {
+  window.location.reload(false);
+
+ }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="container d-flex flex-column col-md-10 col-sm-11 justify-content-center align-items-center ">
+
+        <div className="row m-3 p-3 rounded shadow">
+          <Rumor />
+          <Button clicked={onClickHandler}/>
+        
+        </div>
+      
+      </div>
+
+          <Footer />
     </div>
   );
 }
