@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Button from './Components/Button';
 import Rumor from './Components/Rumor';
@@ -6,7 +6,6 @@ import Footer from './Components/Footer';
 
 
 const App = () => {
-
 
  const onClickHandler = () => {
   window.location.reload(false);
