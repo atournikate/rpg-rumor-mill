@@ -3,6 +3,7 @@ import './App.css';
 import Button from './Components/Button';
 import Rumor from './Components/Rumor';
 import Footer from './Components/Footer';
+import Header from './Components/Header';
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header />
 
       <div className="container d-flex flex-column col-md-10 col-sm-11 justify-content-center align-items-center ">
 

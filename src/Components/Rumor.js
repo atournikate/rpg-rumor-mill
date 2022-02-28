@@ -286,7 +286,7 @@ export const Rumor = ( {data} ) => {
   
   return (
 
-        <main>
+        <main className="mt-5">
          { Rumor() }
         </main>
         
